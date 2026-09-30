@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "manyangfoundation",
+  "compatibility_date": "2026-06-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "dist/server/server.js",
+  "assets": {
+    "directory": "dist/client",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+  },
+  "observability": {
+    "enabled": true,
+  },
+}

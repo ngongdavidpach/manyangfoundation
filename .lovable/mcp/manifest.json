@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://rzfrtyuchobqkqewwtai.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "manyang-foundation-mcp",
+      "version": "0.1.0",
+      "title": "Manyang Disability Foundation"
+    },
+    "tools": [
+      {
+        "name": "get_foundation_info",
+        "title": "Get foundation info",
+        "description": "Return public information about the Manyang Disability Foundation — mission, focus areas, and contact details. Requires sign-in; the response is scoped to what the signed-in user is allowed to see.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_news",
+        "title": "List news articles",
+        "description": "List the most recent published news articles from the foundation website. Requires sign-in; row-level security decides which articles the signed-in user can see.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "limit": {
+              "default": 10,
+              "description": "Max number of articles.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

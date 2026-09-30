@@ -1,0 +1,14 @@
+# Manyang Disability Foundation
+
+> Non-profit providing mobility aids, healthcare access, inclusive education, and sustainable livelihoods for persons with disabilities.
+
+## Pages
+
+- [Home](/): Foundation overview and impact highlights.
+- [About](/about): Mission, governance, and team.
+- [Programs](/programs): Wheelchair, healthcare, education, and livelihood programs.
+- [Gallery](/gallery): Field photos from our programs.
+- [News](/news): Field dispatches and announcements.
+- [Get Involved](/get-involved): Volunteer, partner, and support opportunities.
+- [Donate](/donate): Fund wheelchairs, surgeries, and inclusive classroom tools.
+- [Donate Used Medical Supplies](/guides/donate-supplies): How to donate used wheelchairs, crutches, and medical equipment.
